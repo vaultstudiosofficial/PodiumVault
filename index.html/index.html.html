@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podium Vault | Exclusive Wallpaper Download</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 480px;
+            width: 100%;
+            background: #131b2e;
+            border: 1px solid #1f293d;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .logo {
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ff3333;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        p {
+            color: #9ca3af;
+            font-size: 14px;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+        .preview-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            border: 1px solid #2d3748;
+        }
+        .step-box {
+            background: #1a233a;
+            border: 1px solid #2a3655;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+        .step-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #e5e7eb;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-yt {
+            background: #ff0000;
+            color: #ffffff;
+            border: none;
+        }
+        .btn-yt:hover {
+            background: #cc0000;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            background: #0b0f19;
+            border: 1px solid #374151;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #ff3333;
+        }
+        .btn-submit {
+            background: #ffffff;
+            color: #0b0f19;
+            border: none;
+        }
+        .btn-submit:hover {
+            background: #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">Podium Vault Motorsports</div>
+        <h1>McLaren GT3 Rain Edition</h1>
+        <p>Unlock the high-resolution 4K desktop wallpaper by completing the quick steps below.</p>
+
+        <!-- Preview Image (Make sure your image file is named poster.jpg in the same folder) -->
+        <img src="poster.jpg" alt="McLaren Wallpaper Preview" class="preview-img">
+
+        <!-- Step 1: YouTube Subscribe with Auto-Prompt -->
+        <div class="step-box">
+            <div class="step-title"><span>Step 1:</span> Subscribe to the Channel</div>
+            <a href=https://youtube.com/@podiumvaultmotorsport?si=nTGloTANv-iDHALq?sub_confirmation=1" target="_blank" class="btn btn-yt">
+                Subscribe on YouTube
+            </a>
+        </div>
+
+        <!-- Step 2: Email Form to Unlock & Download -->
+        <div class="step-box">
+            <div class="step-title"><span>Step 2:</span> Enter Email to Download</div>
+            <form action="https://formspree.io/f/moeepkwv" method="POST">
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <!-- Redirects user straight to download your poster.jpg file after submitting -->
+                <input type="hidden" name="_next" value="/poster.jpg">
+                <button type="submit" class="btn btn-submit">Unlock & Download Poster</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
